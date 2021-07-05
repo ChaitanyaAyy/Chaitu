@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pd:ProcessDefinition xmlns:pd="http://xmlns.tibco.com/bw/process/2003" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:ns="http://www.tibco.com/namespaces/tnt/plugins/file" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <pd:name>processes/DynamicProcess/mathOperations.process</pd:name>
+    <pd:startName>Start</pd:startName>
+    <pd:startType>
+        <xsd:element name="root">
+            <xsd:complexType>
+                <xsd:sequence>
+                    <xsd:element name="operation" type="xsd:string"/>
+                    <xsd:element name="num1" type="xsd:string"/>
+                    <xsd:element name="num2" type="xsd:string"/>
+                </xsd:sequence>
+            </xsd:complexType>
+        </xsd:element>
+    </pd:startType>
+    <pd:startX>150</pd:startX>
+    <pd:startY>64</pd:startY>
+    <pd:returnBindings>
+        <result>
+            <xsl:value-of select="$DynamicProcess/root/result"/>
+        </result>
+    </pd:returnBindings>
+    <pd:endName>End</pd:endName>
+    <pd:endType/>
+    <pd:endX>754</pd:endX>
+    <pd:endY>69</pd:endY>
+    <pd:errorSchemas/>
+    <pd:processVariables/>
+    <pd:targetNamespace>http://xmlns.example.com/1623316427595</pd:targetNamespace>
+    <pd:activity name="DynamicProcess">
+        <pd:type>com.tibco.pe.core.CallProcessActivity</pd:type>
+        <pd:resourceType>ae.process.subprocess</pd:resourceType>
+        <pd:x>404</pd:x>
+        <pd:y>67</pd:y>
+        <config>
+            <processName>/processes/DynamicProcess/subProcess/dummySP.process</processName>
+            <spawn>false</spawn>
+            <processNameXPath>if ($Start/root/operation='chaitanya') then '/processes/ProcessofProcess2/subProcess/add-SP.process' else '/processes/ProcessofProcess2/subProcess/Subtract-SP.process'</processNameXPath>
+        </config>
+        <pd:inputBindings>
+            <root>
+                <num1>
+                    <xsl:value-of select="$Start/root/num1"/>
+                </num1>
+                <num2>
+                    <xsl:value-of select="$Start/root/num2"/>
+                </num2>
+            </root>
+        </pd:inputBindings>
+    </pd:activity>
+    <pd:transition>
+        <pd:from>Start</pd:from>
+        <pd:to>DynamicProcess</pd:to>
+        <pd:lineType>Default</pd:lineType>
+        <pd:lineColor>-16777216</pd:lineColor>
+        <pd:conditionType>always</pd:conditionType>
+    </pd:transition>
+    <pd:transition>
+        <pd:from>DynamicProcess</pd:from>
+        <pd:to>End</pd:to>
+        <pd:lineType>Default</pd:lineType>
+        <pd:lineColor>-16777216</pd:lineColor>
+        <pd:conditionType>always</pd:conditionType>
+    </pd:transition>
+</pd:ProcessDefinition>
