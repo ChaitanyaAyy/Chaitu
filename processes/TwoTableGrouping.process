@@ -14,8 +14,8 @@
     <pd:group name="Group">
         <pd:type>com.tibco.pe.core.LoopGroup</pd:type>
         <pd:resourceType>ae.process.group</pd:resourceType>
-        <pd:x>283</pd:x>
-        <pd:y>59</pd:y>
+        <pd:x>268</pd:x>
+        <pd:y>40</pd:y>
         <pd:width>309</pd:width>
         <pd:height>140</pd:height>
         <pd:collapsedWidth>57</pd:collapsedWidth>
@@ -23,10 +23,8 @@
         <pd:groupVariables/>
         <pd:joinToggle>inherit</pd:joinToggle>
         <config>
-            <pd:groupType>inputLoop</pd:groupType>
+            <pd:groupType>while</pd:groupType>
             <pd:serializable>false</pd:serializable>
-            <pd:iterationElementSlot>itr</pd:iterationElementSlot>
-            <pd:indexSlot>i</pd:indexSlot>
             <pd:activityOutputName/>
             <pd:accumulateOutput>false</pd:accumulateOutput>
         </config>
@@ -49,8 +47,8 @@
         <pd:activity name="Write File">
             <pd:type>com.tibco.plugin.file.FileWriteActivity</pd:type>
             <pd:resourceType>ae.activities.FileWriteActivity</pd:resourceType>
-            <pd:x>439</pd:x>
-            <pd:y>136</pd:y>
+            <pd:x>423</pd:x>
+            <pd:y>117</pd:y>
             <config>
                 <encoding>text</encoding>
                 <compressFile>None</compressFile>

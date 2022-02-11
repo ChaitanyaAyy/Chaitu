@@ -3,12 +3,12 @@
     <name>JDBC Connection</name>
     <resourceType>ae.shared.JDBCSharedResource</resourceType>
     <config>
-        <driver>oracle.jdbc.driver.OracleDriver (thin)</driver>
+        <driver>tibcosoftwareinc.jdbc.oracle.OracleDriver</driver>
         <maxConnections>10</maxConnections>
         <loginTimeout>0</loginTimeout>
         <connectionType>JDBC</connectionType>
         <UseSharedJndiConfig>false</UseSharedJndiConfig>
-        <location>jdbc:oracle:thin:@localhost:1521:xe</location>
+        <location>jdbc:tibcosoftwareinc:oracle://localhost:1521;SID=xe</location>
         <user>SYSTEM</user>
         <password>#!mXPHYHnVks8saQcn8v/LE1nKEp9P/BBt</password>
     </config>

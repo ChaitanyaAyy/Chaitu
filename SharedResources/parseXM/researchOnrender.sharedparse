@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <BWSharedResource xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <name>Data-Format-2</name>
+    <name>researchOnrender</name>
     <resourceType>ae.shared.ParseSharedResource</resourceType>
     <config xmlns:xsd="http://www.w3.org/2001/XMLSchema">
         <FormatType>Delimiter separated</FormatType>
-        <ColumnSeparator>:</ColumnSeparator>
+        <ColumnSeparator>,</ColumnSeparator>
         <ColSeparatorRule>Treat all characters as entered as a single column separator string</ColSeparatorRule>
-        <LineSeparator>&#xD;
+        <LineSeparator>
 </LineSeparator>
         <FillCharacter>Space</FillCharacter>
-        <LineLength>4</LineLength>
+        <LineLength>1</LineLength>
         <DataFormat>
             <xsd:element name="root">
                 <xsd:complexType>
                     <xsd:sequence>
-                        <xsd:element name="number" type="xsd:string"/>
-                        <xsd:element name="name" type="xsd:string"/>
-                        <xsd:element name="marks" type="xsd:string"/>
-                        <xsd:element name="Designation" type="xsd:string"/>
-                        <xsd:element name="results" type="xsd:string"/>
+                        <xsd:element name="param" type="xsd:string"/>
+                        <xsd:element name="param1" type="xsd:string"/>
+                        <xsd:element name="param2" type="xsd:string"/>
+                        <xsd:element name="param3" type="xsd:string"/>
+                        <xsd:element name="param4" type="xsd:string"/>
                     </xsd:sequence>
                 </xsd:complexType>
             </xsd:element>

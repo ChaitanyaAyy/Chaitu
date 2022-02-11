@@ -30,7 +30,9 @@
         <config>
             <processName>/processes/processDynam2/dymaSP/Process Definition.process</processName>
         </config>
-        <pd:inputBindings/>
+        <pd:inputBindings>
+            <root/>
+        </pd:inputBindings>
     </pd:activity>
     <pd:activity name="sub">
         <pd:type>com.tibco.pe.core.CallProcessActivity</pd:type>

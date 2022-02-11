@@ -28,8 +28,8 @@
         <pd:inputBindings/>
     </pd:starter>
     <pd:endName>End</pd:endName>
-    <pd:endX>458</pd:endX>
-    <pd:endY>136</pd:endY>
+    <pd:endX>471</pd:endX>
+    <pd:endY>126</pd:endY>
     <pd:errorSchemas/>
     <pd:processVariables/>
     <pd:targetNamespace>http://xmlns.example.com/1624615643031</pd:targetNamespace>

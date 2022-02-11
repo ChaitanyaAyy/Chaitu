@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <pd:ProcessDefinition xmlns:pd="http://xmlns.tibco.com/bw/process/2003" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:ns="http://www.tibco.com/namespaces/tnt/plugins/jms">
-    <pd:name>processes/JMS/JMS.process</pd:name>
+    <pd:name>processes/JMS/JMS_Sender.process</pd:name>
     <pd:startName>Start</pd:startName>
     <pd:startX>122</pd:startX>
     <pd:startY>97</pd:startY>

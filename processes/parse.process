@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pd:ProcessDefinition xmlns:ns2="http://www.tibco.com/namespaces/tnt/plugins/file/v2" xmlns:pd="http://xmlns.tibco.com/bw/process/2003" xmlns:ns1="http://www.tibco.com/namespaces/tnt/plugins/file" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:ns="http://www.tibco.com/pe/EngineTypes" xmlns:tib="http://www.tibco.com/bw/xslt/custom-functions">
+<pd:ProcessDefinition xmlns:pd="http://xmlns.tibco.com/bw/process/2003" xmlns:ns2="http://www.tibco.com/namespaces/tnt/plugins/file/v2" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:ns1="http://www.tibco.com/namespaces/tnt/plugins/file" xmlns:ns="http://www.tibco.com/pe/EngineTypes" xmlns:tib="http://www.tibco.com/bw/xslt/custom-functions">
     <pd:name>processes/parse.process</pd:name>
     <pd:startName>Start</pd:startName>
     <pd:startX>110</pd:startX>
@@ -19,7 +19,7 @@
         <config>
             <InputType>String</InputType>
             <Encoding>ASCII</Encoding>
-            <ParseSharedConfig>/SharedResources/SampleData.sharedparse</ParseSharedConfig>
+            <ParseSharedConfig>/SharedResources/Data Format.sharedparse</ParseSharedConfig>
             <SkipBlankLines>true</SkipBlankLines>
             <SpecifyStartRecord>true</SpecifyStartRecord>
             <ContinueonError>true</ContinueonError>
@@ -41,15 +41,15 @@
     <pd:activity name="Read File">
         <pd:type>com.tibco.plugin.file.FileReadActivity</pd:type>
         <pd:resourceType>ae.activities.FileReadActivity</pd:resourceType>
-        <pd:x>296</pd:x>
-        <pd:y>145</pd:y>
+        <pd:x>283</pd:x>
+        <pd:y>96</pd:y>
         <config>
             <encoding>text</encoding>
         </config>
         <pd:inputBindings>
             <ns2:ReadActivityInputClass>
                 <fileName>
-                    <xsl:value-of select="&quot;E:\tibco\tibData.csv&quot;"/>
+                    <xsl:value-of select="&quot;E:\Tibco\Dataformat.csv&quot;"/>
                 </fileName>
             </ns2:ReadActivityInputClass>
         </pd:inputBindings>
