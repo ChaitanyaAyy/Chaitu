@@ -30,8 +30,8 @@
     <pd:activity name="Engine Command">
         <pd:type>com.tibco.pe.core.EngineCommandActivity</pd:type>
         <pd:resourceType>ae.activities.enginecommand</pd:resourceType>
-        <pd:x>297</pd:x>
-        <pd:y>255</pd:y>
+        <pd:x>281</pd:x>
+        <pd:y>168</pd:y>
         <config>
             <command>Shutdown</command>
         </config>
@@ -42,8 +42,8 @@
     <pd:activity name="Catch">
         <pd:type>com.tibco.pe.core.CatchActivity</pd:type>
         <pd:resourceType>ae.activities.catch</pd:resourceType>
-        <pd:x>110</pd:x>
-        <pd:y>255</pd:y>
+        <pd:x>109</pd:x>
+        <pd:y>155</pd:y>
         <pd:handler>true</pd:handler>
         <config>
             <catchAll>true</catchAll>

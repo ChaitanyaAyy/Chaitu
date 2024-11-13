@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <pd:ProcessDefinition xmlns:pd="http://xmlns.tibco.com/bw/process/2003" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:ns="http://www.tibco.com/namespaces/tnt/plugins/jms">
-    <pd:name>processes/JMS/JMS Receiver.process</pd:name>
+    <pd:name>processes/JMS/JMS_Receiver.process</pd:name>
     <pd:startName>JMS Queue Receiver</pd:startName>
     <pd:startX>0</pd:startX>
     <pd:startY>0</pd:startY>
@@ -14,9 +14,9 @@
             <PermittedMessageType>Text</PermittedMessageType>
             <SessionAttributes>
                 <transacted>false</transacted>
-                <acknowledgeMode>1</acknowledgeMode>
+                <acknowledgeMode>2</acknowledgeMode>
                 <maxSessions>1</maxSessions>
-                <destination>chetan</destination>
+                <destination>abc</destination>
                 <selector/>
             </SessionAttributes>
             <ConfigurableHeaders>

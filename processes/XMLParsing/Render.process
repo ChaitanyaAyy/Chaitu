@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pd:ProcessDefinition xmlns:pd="http://xmlns.tibco.com/bw/process/2003" xmlns:ns1="http://www.tibco.com/namespaces/tnt/plugins/file" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:ns="http://www.tibco.com/namespaces/tnt/plugins/file/v2" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:pfx4="http://www.tibco.com/schemas/Chaitu/SharedResources/Schema.xsd" xmlns:pfx3="http://www.tibco.com/schemas/Chaitu/Shared Resources/XML DATA/Schema.xsd" xmlns:pfx2="http://xmlns.tibco.com/bw/activity/xml/render/bytesEnvelope/2003/05" xmlns:pfx="http://www.tibco.com/schemas/Chaitu/Shared Resources/Schema.xsd">
+<pd:ProcessDefinition xmlns:pd="http://xmlns.tibco.com/bw/process/2003" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:ns1="http://www.tibco.com/namespaces/tnt/plugins/file" xmlns:ns="http://www.tibco.com/namespaces/tnt/plugins/file/v2" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:pfx4="http://www.tibco.com/schemas/Chaitu/SharedResources/Schema.xsd" xmlns:pfx3="http://www.tibco.com/schemas/Chaitu/Shared Resources/XML DATA/Schema.xsd" xmlns:pfx2="http://xmlns.tibco.com/bw/activity/xml/render/bytesEnvelope/2003/05" xmlns:pfx="http://www.tibco.com/schemas/Chaitu/Shared Resources/Schema.xsd">
     <xsd:import namespace="http://www.tibco.com/schemas/Chaitu/Shared Resources/Schema.xsd"/>
     <xsd:import namespace="http://www.tibco.com/schemas/Chaitu/Shared Resources/XML DATA/Schema.xsd" schemaLocation="/Shared Resources/XML DATA/Schema.xsd"/>
     <xsd:import namespace="http://www.tibco.com/schemas/Chaitu/SharedResources/Schema.xsd" schemaLocation="/SharedResources/Schema.xsd"/>
@@ -33,8 +33,8 @@
     <pd:activity name="Parse XML">
         <pd:type>com.tibco.plugin.xml.XMLParseActivity</pd:type>
         <pd:resourceType>ae.activities.XMLParseActivity</pd:resourceType>
-        <pd:x>470</pd:x>
-        <pd:y>67</pd:y>
+        <pd:x>456</pd:x>
+        <pd:y>166</pd:y>
         <config>
             <inputStyle>text</inputStyle>
             <xsdVersion>default</xsdVersion>

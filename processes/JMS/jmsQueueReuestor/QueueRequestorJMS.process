@@ -3,11 +3,11 @@
     <pd:name>processes/JMS/jmsQueueReuestor/QueueRequestorJMS.process</pd:name>
     <pd:startName>Start</pd:startName>
     <pd:startX>142</pd:startX>
-    <pd:startY>151</pd:startY>
+    <pd:startY>133</pd:startY>
     <pd:returnBindings/>
     <pd:endName>End</pd:endName>
     <pd:endX>483</pd:endX>
-    <pd:endY>157</pd:endY>
+    <pd:endY>133</pd:endY>
     <pd:errorSchemas/>
     <pd:processVariables/>
     <pd:targetNamespace>http://xmlns.example.com/1624615515063</pd:targetNamespace>

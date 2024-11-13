@@ -2,6 +2,14 @@
 <repository xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance" xmlns = "http://www.tibco.com/xmlns/repo/types/2002">
 	<globalVariables>
 		<globalVariable>
+			<name>chetan</name>
+			<value>$Read-File/ns1:ReadActivityOutputTextClass/fileContent/textContent</value>
+			<deploymentSettable>true</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>String</type>
+			<modTime>1625487250855</modTime>
+		</globalVariable>
+		<globalVariable>
 			<name>itrdata</name>
 			<value>$Read-File/ns1:ReadActivityOutputTextClass/fileContent/textContent</value>
 			<deploymentSettable>true</deploymentSettable>
